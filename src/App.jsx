@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import QRCode from './assets/QRcode.jpeg'
 import Swal from 'sweetalert2';
 import './App.css';
 import GameBoard from './components/GameBoard';
@@ -90,12 +91,12 @@ Swal.fire({
     <br/>
     ${
       isMobile
-        ? `<a href="upi://pay?pa=mr.danishibrahim-2@okhdfcbank&pn=Danish%20Ibrahim&cu=INR" 
+        ? ` <p>Click below to spread some chai love</p><a href="upi://pay?pa=mr.danishibrahim-2@okhdfcbank&pn=Danish%20Ibrahim&cu=INR" 
               style="display:inline-block; padding: 10px 20px; background:#4CAF50; color:white; font-weight:bold; border-radius:30px; text-decoration:none;">
-              ☕ Support via UPI
+              ☕💛 Buy Me a Chai 💛☕
            </a>`
-        : `<img src="/path/to/qr-upi.png" alt="UPI QR Code" style="max-width:200px; margin-top:15px;" />
-           <p>Scan the QR with any UPI app</p>`
+        : `<img src=${QRCode} alt="UPI QR Code" style="max-width:200px; margin-top:15px;" />
+           <p>☕💛 Spread some chai love 💛☕ Scan the QR with any UPI app💛☕</p>`
     }
   `,
   confirmButtonText: 'Play Again',
