@@ -1,12 +1,49 @@
-# React + Vite
+# 🧠 Memory Game - React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun, responsive memory matching game built using **React + Vite** with modern UI features like **Lottie animations**, **Toast notifications**, and **Tailwind CSS**. Designed to work seamlessly across all devices with a **6x6 grid on desktop** and a **3x6 grid on mobile**.
 
-Currently, two official plugins are available:
+> Live Demo: [memory101.netlify.app](https://memory101.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔁 6x6 grid layout on desktop and 3x6 on mobile
+- 💡 Responsive design with Tailwind CSS
+- 🔔 Real-time feedback using React Toastify
+- 🎉 Lottie animations for success and fail events
+- 🖼️ Random card images from Unsplash
+- ✅ Match checking logic with win/loss detection
+- ⚙️ Built with Vite for lightning-fast performance
+
+---
+
+## 📸 Preview
+
+![Game Screenshot](./screenshot.png) <!-- Replace with your own screenshot if available -->
+
+---
+
+## 🛠️ Tech Stack
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Toastify](https://fkhadra.github.io/react-toastify/)
+- [Lottie React](https://lottiefiles.com/)
+- [Unsplash](https://unsplash.com/) for card images
+
+---
+
+## 📦 Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/DanishIbrahimKhan/memory-game.git
+cd memory-game
+
+# Install dependencies
+npm install
+
+# Run the app
+npm run dev
