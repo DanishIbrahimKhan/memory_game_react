@@ -1,0 +1,101 @@
+/* Container styling */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+/* Button */
+.new-game-button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.new-game-button:hover {
+  background-color: #2563eb;
+}
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+/* Grid */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6x6 grid */
+  gap: 1rem;
+   max-width: 700px;
+  justify-items: center;
+}
+
+
+/* Card Styling */
+.card {
+  perspective: 1000px;
+  width: 100px;
+  height: 100px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Front of the card */
+.card-front {
+  transform: rotateY(180deg);
+}
+.card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+/* Back of the card */
+.card-back {
+  background-color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Lottie animations */
+.lottie {
+  width: 200px;
+  margin: 2rem auto 0;
+}
