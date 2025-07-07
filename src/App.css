@@ -39,13 +39,18 @@
   padding: 16px;
 }
 /* Grid */
-
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* 6x6 grid */
+  grid-template-columns: repeat(3, 1fr); /* Mobile: 3 columns */
   gap: 1rem;
-   max-width: 700px;
+  max-width: 700px;
   justify-items: center;
+}
+
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(6, 1fr); /* Tablet/Desktop: 6 columns */
+  }
 }
 
 
