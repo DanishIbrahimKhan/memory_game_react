@@ -4,7 +4,7 @@ export default function Header({ shuffleCards, time, bestTime }) {
   return (
     <div className="header" style={{ textAlign: 'center', padding: '1rem' }}>
       {/* <h1 style={{ fontSize: '2rem' }}>🧠 Memory Game</h1> */}
-      <button onClick={shuffleCards} style={{ padding: '0.5rem 1rem', fontWeight: 'bold' }}>
+      <button onClick={shuffleCards} style={{ padding: '10px', fontWeight: 'bold' }}>
         🔁 New Game
       </button>
       <div>
